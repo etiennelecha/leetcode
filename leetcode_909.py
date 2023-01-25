@@ -5,6 +5,7 @@ from typing import List
 class Solution:
     """
     no input reindixing, beats ~30% compute, beats ~60% memory
+    Complexity: Compute O(n^2), Memory O(n^2)
     """
 
     def snakesAndLadders(self, board: List[List[int]]) -> int:
