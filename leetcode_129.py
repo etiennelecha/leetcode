@@ -21,7 +21,7 @@ def sumNumbers(self, root: Optional[TreeNode]) -> int:
             yield from dfs(10 * acc + node.val, node.right)
             yield from dfs(10 * acc + node.val, node.left)
 
-    return sum(i for i in dfs(0, root))
+    return sum(dfs(0, root))
 
 class OptimalSolution:
     '''
